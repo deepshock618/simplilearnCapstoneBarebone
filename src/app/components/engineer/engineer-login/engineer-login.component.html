@@ -1,0 +1,15 @@
+<div class="col-md-8 offset-md-3">
+    <h2>Login as Engineer</h2>
+    <form (ngSubmit)="login(id,password)">
+    
+        <div class="form-group">
+            <label>Enter engineer Id</label>
+            <input type="number" class="form-control" [(ngModel)]="id" id="id" name="id">
+        </div>
+        <div class="form-group">
+            <label>Enter password</label>
+            <input type="password" class="form-control" [(ngModel)]="password" id="password" name="password">
+        </div>
+        <button class="btn btn-success" type="submit">Login</button>
+    </form>
+    </div>

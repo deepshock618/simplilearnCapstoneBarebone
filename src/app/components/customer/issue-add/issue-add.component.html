@@ -1,0 +1,23 @@
+<div class="col-md-8 offset-md-3">
+    <h2>Create New Issue</h2>
+    <form (ngSubmit)="saveIssue()">
+    
+        <div class="form-group">
+            <label>title</label>
+            <input type="text" class="form-control" id="title"
+                [(ngModel)]="issue.title" name="title">
+        </div>
+        <div class="form-group">
+            <label>writeup</label>
+            <input type="text" class="form-control" id="writeup"
+                [(ngModel)]="issue.writeup" name="writeup">
+        </div>
+        <div class="form-group">
+            <label>pin</label>
+            <input type="text" class="form-control" id="pin"
+                [(ngModel)]="issue.pin" name="pin">
+        </div>
+    
+        <button class="btn btn-success" type="submit">Create</button>
+    </form>
+    </div>

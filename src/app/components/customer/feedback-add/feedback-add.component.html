@@ -1,0 +1,13 @@
+<div class="col-md-8 offset-md-3">
+    <h2>Add New Feedback</h2>
+    <form (ngSubmit)="saveFeedback()">
+    
+        <div class="form-group">
+            <label>Writeup</label>
+            <input type="text" class="form-control" id="writeup"
+                [(ngModel)]="feedback.writeup" name="writeup">
+        </div>
+    
+        <button class="btn btn-success" type="submit">Add</button>
+    </form>
+    </div>

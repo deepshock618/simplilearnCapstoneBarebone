@@ -1,0 +1,23 @@
+<h2>Manager Data</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>pin</th>
+            <th>password</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let manager of managers">
+            <td>{{manager.id}}</td>
+            <td>{{manager.name}}</td>
+            <td>{{manager.pin}}</td>
+            <td>{{manager.password}}</td>
+            <button (click)="goToUpdate(manager.id)" class="btn btn-info">Update</button>
+            <button (click)="removeManager(manager.id)" class="btn btn-danger" style="margin-left:10px;">Delete</button>
+        </tr>
+    </tbody>
+</table>
+
+<button routerLink="manager-add" class="btn btn-info" (click)="addManager()">Add new Manager</button>

@@ -1,0 +1,29 @@
+<h2>Issue List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>customerId</th>
+            <th>writeup</th>
+            <th>pin</th>
+            <th>status</th>
+            <th>engineerId</th>
+            <th>remarks</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let issue of issues">
+            <td>{{issue.id}}</td>
+            <td>{{issue.title}}</td>
+            <td>{{issue.customerId}}</td>
+            <td>{{issue.writeup}}</td>
+            <td>{{issue.pin}}</td>
+            <td>{{issue.status}}</td>
+            <td>{{issue.engineerId}}</td>
+            <td>{{issue.remarks}}</td>
+            <button (click)="issueStatusUpdate(issue.id)">Status update</button>
+            <button (click)="issueRemarksAdd(issue.id)">Remarks update</button>
+        </tr>
+    </tbody>
+</table>

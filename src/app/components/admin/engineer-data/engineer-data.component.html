@@ -1,0 +1,22 @@
+<h2>Engineer Data</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>pin</th>
+            <th>password</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let engineer of engineers">
+            <td>{{engineer.id}}</td>
+            <td>{{engineer.name}}</td>
+            <td>{{engineer.pin}}</td>
+            <td>{{engineer.password}}</td>
+            <button (click)="goToUpdate(engineer.id)" class="btn btn-info">Update</button>
+            <button (click)="removeEngineer(engineer.id)" class="btn btn-danger" style="margin-left:10px;">Delete</button>
+        </tr>
+    </tbody>
+</table>
+<button routerLink="engineer-add" class="btn btn-info" (click)="addEngineer()">Add new Engineer</button>

@@ -1,0 +1,10 @@
+<div class="col-md-8 offset-md-3">
+    <h2>Login as Admin</h2>
+    <form>
+        <div class="form-group">
+            <label>Enter password</label>
+            <input type="password" class="form-control" (ngModel)="admin.password" id="password" name="password">
+        </div>
+        <button class="btn btn-success" type="submit" (click)="login(admin.password)">Login</button>
+    </form>
+    </div>

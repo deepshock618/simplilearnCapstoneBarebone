@@ -1,0 +1,43 @@
+<div class="col-md-8 offset-md-3">
+    <h2>Update Issue</h2>
+    <form (ngSubmit)="updateIssue()">
+    
+        <div class="form-group">
+            <label>title</label>
+            <input type="text" class="form-control" id="title"
+                [(ngModel)]="issue.title" name="title">
+        </div>
+        <div class="form-group">
+            <label>customerId</label>
+            <input type="text" class="form-control" id="customerId"
+                [(ngModel)]="issue.customerId" name="customerId">
+        </div>
+        <div class="form-group">
+            <label>writeup</label>
+            <input type="text" class="form-control" id="writeup"
+                [(ngModel)]="issue.writeup" name="writeup">
+        </div>
+        <div class="form-group">
+            <label>pin</label>
+            <input type="text" class="form-control" id="pin"
+                [(ngModel)]="issue.pin" name="pin">
+        </div>
+        <div class="form-group">
+            <label>status</label>
+            <input type="text" class="form-control" id="status"
+                [(ngModel)]="issue.status" name="status">
+        </div>
+        <div class="form-group">
+            <label>engineerId</label>
+            <input type="text" class="form-control" id="engineerId"
+                [(ngModel)]="issue.engineerId" name="engineerId">
+        </div>
+        <div class="form-group">
+            <label>remarks</label>
+            <input type="text" class="form-control" id="remarks"
+                [(ngModel)]="issue.remarks" name="remarks">
+        </div>
+    
+        <button class="btn btn-success" type="submit">Update</button>
+    </form>
+    </div>

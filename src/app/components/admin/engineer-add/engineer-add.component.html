@@ -1,0 +1,23 @@
+<div class="col-md-8 offset-md-3">
+    <h2>Create New Engineer</h2>
+    <form (ngSubmit)="saveEngineer()">
+    
+        <div class="form-group">
+            <label>name</label>
+            <input type="text" class="form-control" id="name"
+                [(ngModel)]="engineer.name" name="name">
+        </div>
+        <div class="form-group">
+            <label>pin</label>
+            <input type="number" class="form-control" id="pin"
+                [(ngModel)]="engineer.pin" name="pin">
+        </div>
+        <div class="form-group">
+            <label>password</label>
+            <input type="text" class="form-control" id="password"
+                [(ngModel)]="engineer.password" name="password">
+        </div>
+        
+        <button class="btn btn-success" type="submit">Create</button>
+    </form>
+    </div>

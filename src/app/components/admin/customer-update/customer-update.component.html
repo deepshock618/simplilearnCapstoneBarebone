@@ -1,0 +1,37 @@
+<div class="col-md-8 offset-md-3">
+    <h2>Update Customer</h2>
+    <form (ngSubmit)="updateCustomer()">
+    
+        <div class="form-group">
+            <label>name</label>
+            <input type="text" class="form-control" id="name"
+                [(ngModel)]="customer.name" name="name">
+        </div>
+        <div class="form-group">
+            <label>pin</label>
+            <input type="text" class="form-control" id="pin"
+                [(ngModel)]="customer.pin" name="pin">
+        </div>
+        <div class="form-group">
+            <label>address</label>
+            <input type="text" class="form-control" id="address"
+                [(ngModel)]="customer.address" name="address">
+        </div>
+        <div class="form-group">
+            <label>email</label>
+            <input type="text" class="form-control" id="email"
+                [(ngModel)]="customer.email" name="email">
+        </div>
+        <div class="form-group">
+            <label>phone</label>
+            <input type="text" class="form-control" id="phone"
+                [(ngModel)]="customer.phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label>password</label>
+            <input type="text" class="form-control" id="password"
+                [(ngModel)]="customer.password" name="password">
+        </div>
+        <button class="btn btn-success" type="submit">Update</button>
+    </form>
+    </div>

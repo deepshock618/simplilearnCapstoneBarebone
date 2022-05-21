@@ -1,0 +1,12 @@
+<div class="col-md-8 offset-md-3">
+    <h2>Add Remarks</h2>
+    <form (ngSubmit)="updateStatus(issue.status)">
+        <div class="form-group">
+            <label>remarks</label>
+            <input type="text" class="form-control" id="status"
+                [(ngModel)]="issue.status" name="status">
+        </div>
+    
+        <button class="btn btn-success" type="submit">Update</button>
+    </form>
+    </div>
